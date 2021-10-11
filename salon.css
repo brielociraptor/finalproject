@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: darkslateblue;
+    font-family: Cambria, serif;
+    background-color: lavender;
+    margin: 0;
+}
+
+#wrapper {
+    margin-top: 50px;
+    padding: 0.5em;
+}
+
+h1 {
+    margin-top: 2em;
+}
+
+#wrapper li {
+    list-style-type: none;
+}
+
+#coverimage {
+    display: block;
+    background-image: url("images/hairbgsmall.jpg");
+    opacity: 0.75;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 350px;
+}
+
+#tutorials {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    padding: 1em;
+}
+
+nav {
+    background-color: lavender;
+    margin: 0;
+    padding-bottom: 0.5em;
+    text-align: right;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+nav ul {
+    text-decoration: none;
+    padding-right: 2em;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 1em;
+    font-size: medium;
+}
+
+.logo {
+    float: left;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+/*h3 {
+    display: inline-block;
+    float:  left;
+    padding-right: 3em;
+    padding-left: 2em;
+    font-size: large;
+}*/
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: steelblue;
+}
+
+nav a:visited {
+    color: mediumslateblue;
+}
+
+nav a:hover {
+    color: purple;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
+
+#checkbox {
+    column-count: 2;
+    column-gap: 5em;
+}
+
+#checkbox li {
+    list-style-type: none;
+    width: auto;
+}
+
+#mollyimagelarge {
+    display: none;
+}
+
+#shampoobowllarge {
+    display: none;
+}
+
+#gallery {
+    position: relative;
+}
+
+#gallery ul {
+    width: 350px;
+    list-style-type: none;
+}
+
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+
+}
+
+#gallery img {
+    border: none;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#gallery a:hover span {
+    position: absolute;
+    top: 15px;
+    left: 25em;
+    opacity: 1;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+    #coverimage {
+        background-image: url("images/hairbg600.jpg");
+        background-position: center;
+        min-height: 500px;
+    }
+
+    #wrapper {
+        margin: auto;
+        width: 90%;
+    }
+
+    input[type=submit] {
+       position: center;
+    }
+
+    #mollyimage {
+        display: none;
+    }
+
+    #mollyimagelarge {
+        overflow: hidden;
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #shampoobowlsmall {
+        display: none;
+    }
+
+    #shampoobowllarge {
+        overflow: hidden;
+        display: grid;
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    #wrapper {
+        display: grid;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-rows: auto auto auto auto;
+
+    }
+
+    #coverimage {
+        background-image: url("images/hairbgextralarge.jpg");
+        background-position: center;
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    #wrapper ul {
+        grid-column: 2/4;
+        grid-row: auto;
+    }
+
+    #wrapper h1 {
+        grid-row: 1/2;
+        grid-column: 2/4;
+        text-align: center;
+    }
+    #mollyimage {
+        display: none;
+    }
+
+
+    #mollyimagelarge {
+        overflow: hidden;
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #aboutme {
+        padding-left: 2em;
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    #tutorials {
+        grid-row: 2/4;
+        grid-column: 2/4;
+    }
+
+    footer {
+        margin-top: 2em;
+        grid-row: 4/5;
+        grid-column: 2/4;
+    }
+
+    #wrapper #gallery {
+        grid-column: 2/4;
+        grid-row: auto;
+        margin-bottom: 3em;
+    }
+
+    main {
+        display: grid;
+        grid-column: 2/4;
+        grid-row: 2/4;
+    }
+
+}

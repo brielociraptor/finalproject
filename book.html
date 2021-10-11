@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Book an appointment with Molly today">
+    <title>Molly at Salon Cole :: Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="salon.css">
+</head>
+<body>
+
+<nav>
+    <img class="logo" src="images/mollylogo.png" height="40" width="151"/>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="book.html">Book</a></li>
+    </ul>
+</nav>
+
+<div id="wrapper">
+    <h1>Book an Appointment with Molly Today</h1>
+    <main>
+        <p>Required fields are marked with an asterisk *</p>
+
+        <form method="post">
+
+            <label for="firstName">* First Name:</label>
+            <input type="text" id="firstName" name="firstName" required="required">
+
+            <label for="lastName">* Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required="required">
+
+            <label for="myEmail">* E-mail:</label>
+            <input type="email" id="myEmail" name="myEmail" required="required">
+            <div id="services">
+                <legend>Which service(s) would you like?</legend>
+                <ul id="checkbox">
+                    <li>
+                        <input type="checkbox" id="kidscut" name="kidscut">
+                        <label for="kidscut">Kid's Cut</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="womenscut" name="womenscut">
+                        <label for="womenscut">Women's Cut</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="menscut" name="menscut">
+                        <label for="menscut">Men's Cut</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="brazilianblowout" name="brazilianblowout">
+                        <label for="brazilianblowout">Brazilian Blowout</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="roottouchup" name="roottouchup">
+                        <label for="roottouchup">Root Touch Up</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="partialhighlight" name="partialhighlight">
+                        <label for="partialhighlight">Partial Highlight</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="fullhighlight" name="fullhighlight">
+                        <label for="fullhighlight">Full Head Highlight</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="partialbalayage" name="partialbalayage">
+                        <label for="partialbalayage">Partial Balayage</label>
+                    </li>
+                    <li>
+
+                        <input type="checkbox" id="fullbalayage" name="fullbalayage">
+                        <label for="fullbalayage">Full Head Balayage</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="bridalupdo" name="bridalupdo">
+                        <label for="bridalupdo">Bridal Updo</label>
+                    </li>
+                    <li>
+
+                        <input type="checkbox" id="trialupdo" name="trialupdo">
+                        <label for="trialupdo">Trial Updo</label>
+                    </li>
+                    <li>
+
+                        <input type="checkbox" id="eyebrowwax" name="eyebrowwax">
+                        <label for="eyebrowwax">Eyebrow Wax</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="lipchinwax" name="lipchinwax">
+                        <label for="lipchinwax">Lip & Chin Wax</label>
+                    </li>
+            </div>
+            <br>
+
+            <label for="myComments">* Comments:</label>
+            <textarea id="myComments" name="myComments" rows="2" cols="20" required="required">
+            </textarea>
+
+            <br>
+
+            <input type="submit" value="Book Now">
+        </form>
+        <br><br>
+
+    </main>
+
+    <footer>
+        Copyright &copy; 2021 Molly at Salon Cole <br>
+        <a href="mailto: sbrielmaier@my.wctc.edu">Sara Brielmaier</a>
+
+    </footer>
+</div>
+
+</body>
+</html>
